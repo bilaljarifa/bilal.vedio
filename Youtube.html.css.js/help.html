@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23FF0000'/%3E%3Ctext x='50' y='70' font-size='60' text-anchor='middle' fill='white'%3EY%3C/text%3E%3C/svg%3E">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        secondary: '#8b5cf6',
+                        accent: '#ec4899',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Help - Bilal Video</title>
+</head>
+<body>
+    <header>
+        <div class="left_section">
+            <i class="material-icons-outlined menu-icon">menu</i>
+            <div class="logo-container">
+                <span class="logo-icon">🎬</span>
+                <span class="logo-text">Bilal Video</span>
+            </div>
+        </div>
+         <div class="mid_section ">
+            <form action="">
+                <input type="text" placeholder="Search" />  
+                <button>
+                    <i class="material-icons-outlined "> search</i>
+                </button>
+            </form>
+            <i class="material-icons-outlined mic" >mic</i>
+         </div>
+
+          <div class="right_section ">
+            <a href=""> <i class="material-icons-outlined ">vedio_call </i></a>
+            <a href=""> <i class="material-icons-outlined "> apps </i></a>
+            <a href=""> <i class="material-icons-outlined ">notifications  </i></a>
+            <a href=""> <i class="material-icons-outlined ">account_circle </i></a>
+          </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <div class="content_area">
+        <aside>
+            <nav>
+      <!-- MAIN SECTION -->
+      <a href="index.html" class="nav_link">
+        <i class="material-icons-outlined">home</i>
+        <span>Home</span>
+      </a>
+
+      <a href="explore.html" class="nav_link">
+        <i class="material-icons-outlined">explore</i>
+        <span>Explore</span>
+      </a>
+
+      <a href="subscriptions.html" class="nav_link">
+        <i class="material-icons-outlined">subscriptions</i>
+        <span>Subscriptions</span>
+      </a>
+
+      <a href="original.html" class="nav_link">
+        <i class="material-icons-outlined">ondemand_video</i>
+        <span>Original</span>
+      </a>
+
+      <a href="youtube-music.html" class="nav_link">
+        <i class="material-icons-outlined">library_music</i>
+        <span>YouTube Music</span>
+      </a>
+
+      <hr>
+
+      <!-- LIBRARY SECTION -->
+      <a href="library.html" class="nav_link">
+        <i class="material-icons-outlined">video_library</i>
+        <span>Library</span>
+      </a>
+
+      <a href="history.html" class="nav_link">
+        <i class="material-icons-outlined">history</i>
+        <span>History</span>
+      </a>
+
+      <a href="your-videos.html" class="nav_link">
+        <i class="material-icons-outlined">smart_display</i>
+        <span>Your Videos</span>
+      </a>
+
+      <a href="watch-later.html" class="nav_link">
+        <i class="material-icons-outlined">schedule</i>
+        <span>Watch Later</span>
+      </a>
+
+      <a href="liked-videos.html" class="nav_link">
+        <i class="material-icons-outlined">thumb_up</i>
+        <span>Liked Videos</span>
+      </a>
+
+      <hr>
+      <a href="movies-shows.html" class="nav_link">
+        <i class="material-icons-outlined">theaters</i>
+        <span>Movies & Shows</span>
+      </a>
+
+      <a href="gaming.html" class="nav_link">
+        <i class="material-icons-outlined">sports_esports</i>
+        <span>Gaming</span>
+      </a>
+
+      <a href="live.html" class="nav_link">
+        <i class="material-icons-outlined">live_tv</i>
+        <span>Live</span>
+      </a>
+
+      <a href="learning.html" class="nav_link">
+        <i class="material-icons-outlined">school</i>
+        <span>Learning</span>
+      </a>
+
+      <a href="sports.html" class="nav_link">
+        <i class="material-icons-outlined">emoji_events</i>
+        <span>Sports</span>
+      </a>
+
+      <hr>
+
+      <!-- SETTINGS -->
+      <a href="settings.html" class="nav_link">
+        <i class="material-icons-outlined">settings</i>
+        <span>Settings</span>
+      </a>
+
+      <a href="report-history.html" class="nav_link">
+        <i class="material-icons-outlined">flag</i>
+        <span>Report history</span>
+      </a>
+
+      <a href="help.html" class="nav_link active">
+        <i class="material-icons-outlined">help_outline</i>
+        <span id="active_span">Help</span>
+      </a>
+
+      <a href="send-feedback.html" class="nav_link">
+        <i class="material-icons-outlined">feedback</i>
+        <span>Send feedback</span>
+      </a>
+
+            </nav>
+        </aside>
+
+        <main>
+            <div class="page-header" style="margin-bottom: 24px; padding: 20px 0;">
+                <h1 class="page-title" style="font-size: 2.4rem; font-weight: 700; color: var(--text-primary); margin-bottom: 8px;">Help</h1>
+                <p class="page-description" style="font-size: 1.6rem; color: var(--text-secondary);">Help center and support</p>
+            </div>
+            <div class="vedios_container">
+                <div class="vedio">
+                    <div class="thumbnail">
+                        <img src="images/vedio.1.jpg" alt="">
+                    </div>
+                    <div class="vedio_details">
+                        <div class="creator_img">
+                            <img src="images/icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <a href="" class="vedio_title">
+                                bilal project youtube clone part 1 html css and js
+                            </a>
+                            <a href="" class="vedio_creatur">
+                                bilal jarifa
+                            </a>
+                            <span>
+                                10M views . 2 days ago 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="vedio">
+                    <div class="thumbnail">
+                        <img src="images/vedio.1.jpg" alt="">
+                    </div>
+                    <div class="vedio_details">
+                        <div class="creator_img">
+                            <img src="images/icon.png" alt="">
+                        </div>
+                        <div class="title">
+                            <a href="" class="vedio_title">
+                                bilal project youtube clone part 1 html css and js
+                            </a>
+                            <a href="" class="vedio_creatur">
+                                bilal jarifa
+                            </a>
+                            <span>
+                                10M views . 2 days ago 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
